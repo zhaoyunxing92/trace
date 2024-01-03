@@ -355,7 +355,7 @@ kubectl -n kubernetes-dashboard create token admin-user
 
 ### Chrome拦截
 
-输入一下11个单词解决
+输入以下11个单词解决
 ``` shell
 thisisunsafe
 ```

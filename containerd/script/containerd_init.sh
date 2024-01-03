@@ -40,7 +40,7 @@ echo "======== start install k8s ====== ====="
 sudo bash -c 'cat << EOF > /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
 name=Kubernetes
-baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64/
+baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-$(uname -m)
 enabled=1
 gpgcheck=1
 repo_gpgcheck=0
