@@ -3,6 +3,8 @@
 # 执行安装containerd步骤
 if ! type containerd >/dev/null 2>&1; then
     echo "========start install containerd ==========="
+    sudo mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+    sudo curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
     # 设置repo
     sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
     # 安装containerd
